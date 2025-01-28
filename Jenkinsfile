@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     def dockerfileContent = readFile('Dockerfile')
-                    echo "Dockerfile Content: 123456"
+                    echo "Dockerfile Content: 1234567"
                     echo dockerfileContent
                 }
             }
