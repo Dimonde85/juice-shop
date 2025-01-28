@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    triggers {
+        // Trigger pipeline on push to the master branch
+        githubPush()  // This requires GitHub webhook to be set up
+    }
 
     stages {
         stage('Clone Repository') {
